@@ -40,7 +40,3 @@ CREATE TABLE requests (
 
 -- Alter table properties to upload images
 ALTER TABLE properties ADD COLUMN image_path VARCHAR(255);
-
--- Add a new admin user with a hashed password
-INSERT INTO users (name, email, password, role)
-VALUES ('admin', 'admin@g.com', '$2y$10$oT9OE85Lyv9Kv00xroSsRe9wSbMRWzTGFzFZAaY6dO8ROGw7iZKJG', 'admin');
